@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT $JAVA_OPTS -Dspring.profiles.active=demo -jar target/web-contacts-book-0.0.1-SNAPSHOT.jar

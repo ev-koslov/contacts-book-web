@@ -25,13 +25,4 @@ public class AccountService {
     public Account getAccountByLogin(String login) {
         return accountDAO.read(login);
     }
-
-    @PostConstruct
-    public void addAdmin(){
-        Account admin = new Account();
-        admin.setLogin("admin");
-        admin.setPassword("admin");
-        admin.setName("admin");
-        accountDAO.create(admin);
-    }
 }
