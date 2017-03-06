@@ -13,8 +13,6 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 
 @SpringBootApplication
 @ComponentScan("ev.koslov")
-//ignoring resourceNotFound. In this case parameters should be overridden
-//@PropertySource(value = "file:${configFile}", ignoreResourceNotFound = true)
 public class MainConfig {
 
 
